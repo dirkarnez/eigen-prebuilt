@@ -20,7 +20,7 @@ jobs:
         
       - name: git clone
         shell: cmd
-        run: git clone --branch ${{ env.tagName }} https://gitlab.com/libeigen/eigen.git
+        run: git clone --branch ${{ env.branchName }} https://gitlab.com/libeigen/eigen.git
 
       - name: Install boost
         uses: MarkusJx/install-boost@v2.3.0
